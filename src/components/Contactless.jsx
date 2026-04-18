@@ -1,4 +1,5 @@
 import React from 'react'
+import contactlessImg from '../assets/images/contactless-payment.jpg'
 
 const ContactlessIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 60 60">
@@ -19,7 +20,7 @@ const Contactless = () => {
       <div className="contactless-container">
         <div className="contactless-image">
           <img
-            src="https://bestmerchantservices.com/wp-content/uploads/2022/08/contactless-payment.jpg"
+            src={contactlessImg}
             alt="Contactless Payment"
           />
         </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logoImg from '../assets/images/bms-logo-nav.png'
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="footer-brand">
           <Link to="/">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2023/10/bms-logo-nav.png"
+              src={logoImg}
               alt="Best Merchant Services"
             />
           </Link>

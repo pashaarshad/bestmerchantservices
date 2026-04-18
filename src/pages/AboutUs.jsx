@@ -1,5 +1,9 @@
 import React from 'react'
 import FooterCTA from '../components/FooterCTA'
+import aboutImg from '../assets/images/about-best-merchant-services.jpg'
+import expertImg from '../assets/images/expert-solutions.jpg'
+import whyBmsImg from '../assets/images/why-best-merchant-services.jpg'
+import lowRatesImg from '../assets/images/merchant-services-low-rates.jpg'
 
 const AboutUs = () => {
   return (
@@ -16,7 +20,7 @@ const AboutUs = () => {
         <div className="about-container">
           <div className="about-image">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2022/09/about-best-merchant-services.jpg"
+              src={aboutImg}
               alt="About Best Merchant Services"
             />
           </div>
@@ -42,7 +46,7 @@ const AboutUs = () => {
           </div>
           <div className="about-image">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2022/09/expert-solutions.jpg"
+              src={expertImg}
               alt="Expert Solutions"
             />
           </div>
@@ -54,7 +58,7 @@ const AboutUs = () => {
         <div className="about-container">
           <div className="about-image about-image-cover">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2022/09/why-best-merchant-services.jpg"
+              src={whyBmsImg}
               alt="Why Best Merchant Services"
             />
           </div>
@@ -127,7 +131,7 @@ const AboutUs = () => {
         <div className="about-container">
           <div className="about-image about-image-cover">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2022/09/merchant-services-low-rates.jpg"
+              src={lowRatesImg}
               alt="Merchant Services Low Rates"
             />
           </div>

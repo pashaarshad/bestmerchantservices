@@ -1,22 +1,13 @@
 import React from 'react'
+import cloverStationImg from '../assets/images/clover-station.jpg'
+import cloverFlexImg from '../assets/images/clover-flex.jpg'
+import cloverMiniImg from '../assets/images/clover-mini.jpg'
 
 const POS = () => {
   const posDevices = [
-    {
-      image: 'https://bestmerchantservices.com/wp-content/uploads/2022/08/clover-station.jpg',
-      title: 'Clover Station',
-      alt: 'Clover Station'
-    },
-    {
-      image: 'https://bestmerchantservices.com/wp-content/uploads/2022/08/clover-flex.jpg',
-      title: 'Clover Flex',
-      alt: 'Clover Flex'
-    },
-    {
-      image: 'https://bestmerchantservices.com/wp-content/uploads/2022/08/clover-mini.jpg',
-      title: 'Clover Mini',
-      alt: 'Clover Mini'
-    },
+    { image: cloverStationImg, title: 'Clover Station', alt: 'Clover Station' },
+    { image: cloverFlexImg, title: 'Clover Flex', alt: 'Clover Flex' },
+    { image: cloverMiniImg, title: 'Clover Mini', alt: 'Clover Mini' },
   ]
 
   return (

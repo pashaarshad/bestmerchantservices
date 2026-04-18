@@ -1,4 +1,5 @@
 import React from 'react'
+import compareImg from '../assets/images/compare-and-save.svg'
 
 const CTA = () => {
   return (
@@ -6,7 +7,7 @@ const CTA = () => {
       <div className="cta-container">
         <div className="cta-image">
           <img
-            src="https://bestmerchantservices.com/wp-content/uploads/2022/08/compare-and-save.svg"
+            src={compareImg}
             alt="Compare And Save"
           />
         </div>

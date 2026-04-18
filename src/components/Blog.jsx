@@ -1,21 +1,24 @@
 import React from 'react'
+import choosingPosImg from '../assets/images/choosing-pos.jpg'
+import mobilePaymentsImg from '../assets/images/mobile-payments.jpg'
+import creditCardSecurityImg from '../assets/images/credit-card-security.jpg'
 
 const Blog = () => {
   const posts = [
     {
-      image: 'https://bestmerchantservices.com/wp-content/uploads/2023/09/choosing-pos-1024x683.jpg',
+      image: choosingPosImg,
       title: 'Points to Consider When Choosing a POS System',
       excerpt: 'The POS system you choose for your business can have a major impact on customer experience and operational efficiency...',
       date: 'September 2023'
     },
     {
-      image: 'https://bestmerchantservices.com/wp-content/uploads/2023/09/mobile-payments-1024x683.jpg',
+      image: mobilePaymentsImg,
       title: 'The Rise of Mobile Payments in Small Business',
       excerpt: 'Mobile payment solutions have transformed how small businesses accept payments from their customers...',
       date: 'September 2023'
     },
     {
-      image: 'https://bestmerchantservices.com/wp-content/uploads/2023/09/credit-card-security-1024x683.jpg',
+      image: creditCardSecurityImg,
       title: 'Credit Card Security: Best Practices for Merchants',
       excerpt: 'Protecting your customers credit card information is essential for building trust and maintaining compliance...',
       date: 'September 2023'

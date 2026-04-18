@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import FooterCTA from '../components/FooterCTA'
+import partnersImg from '../assets/images/partners-handshake.jpg'
 
 const Partners = () => {
   return (
@@ -17,7 +18,7 @@ const Partners = () => {
         <div className="about-container">
           <div className="about-image">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2022/08/partners-handshake.jpg"
+              src={partnersImg}
               alt="Partners Handshake"
             />
           </div>

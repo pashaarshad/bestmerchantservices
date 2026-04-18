@@ -1,5 +1,8 @@
 import React from 'react'
 import FooterCTA from '../components/FooterCTA'
+import chipCardsImg from '../assets/images/chip-cards-services.jpg'
+import loansImg from '../assets/images/small-business-loans.jpg'
+import highRiskImg from '../assets/images/high-risk-merchant.jpg'
 
 const CheckIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
@@ -29,7 +32,7 @@ const OurServices = () => {
         <div className="about-container">
           <div className="about-image about-image-cover">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2022/09/merchat-services-chip-cards-services.jpg"
+              src={chipCardsImg}
               alt="Merchant Services Chip Cards"
             />
           </div>
@@ -62,7 +65,7 @@ const OurServices = () => {
           </div>
           <div className="about-image about-image-cover">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2022/09/merchant-services-small-business-loans.jpg"
+              src={loansImg}
               alt="Small Business Loans"
             />
           </div>
@@ -81,7 +84,7 @@ const OurServices = () => {
         <div className="about-container">
           <div className="about-image about-image-cover">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2022/09/merchant-services-high-risk.jpg"
+              src={highRiskImg}
               alt="High Risk Merchant Services"
             />
           </div>

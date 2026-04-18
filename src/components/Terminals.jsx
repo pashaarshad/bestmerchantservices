@@ -1,22 +1,13 @@
 import React from 'react'
+import dejavooImg from '../assets/images/dejavoo.jpg'
+import m006Img from '../assets/images/m006-device.jpg'
+import verifoneImg from '../assets/images/verifone.jpg'
 
 const Terminals = () => {
   const terminals = [
-    {
-      image: 'https://bestmerchantservices.com/wp-content/uploads/2022/08/dejavoo.jpg',
-      title: 'DEJAVOO Z11',
-      alt: 'Dejavoo Z11'
-    },
-    {
-      image: 'https://bestmerchantservices.com/wp-content/uploads/2022/08/m006-device.jpg',
-      title: 'M006',
-      alt: 'M006 Device'
-    },
-    {
-      image: 'https://bestmerchantservices.com/wp-content/uploads/2022/08/verifone.jpg',
-      title: 'VERIFONE VX 680',
-      alt: 'Verifone VX 680'
-    },
+    { image: dejavooImg, title: 'DEJAVOO Z11', alt: 'Dejavoo Z11' },
+    { image: m006Img, title: 'M006', alt: 'M006 Device' },
+    { image: verifoneImg, title: 'VERIFONE VX 680', alt: 'Verifone VX 680' },
   ]
 
   return (

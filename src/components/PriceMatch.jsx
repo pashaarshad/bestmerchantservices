@@ -1,4 +1,5 @@
 import React from 'react'
+import weWillPayImg from '../assets/images/we-will-pay-you.svg'
 
 const PriceMatch = () => {
   return (
@@ -15,7 +16,7 @@ const PriceMatch = () => {
 
         <div className="price-match-image">
           <img
-            src="https://bestmerchantservices.com/wp-content/uploads/2022/08/we-will-pay-you.svg"
+            src={weWillPayImg}
             alt="We Will Pay You $500"
           />
         </div>

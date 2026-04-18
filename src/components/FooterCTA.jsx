@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import footerCtaImg from '../assets/images/footer-cta.svg'
 
 const FooterCTA = () => {
   return (
@@ -11,7 +12,7 @@ const FooterCTA = () => {
         <Link to="/contact-us" className="btn-footer-cta">GET FREE QUOTE</Link>
         <div className="footer-cta-image">
           <img
-            src="https://bestmerchantservices.com/wp-content/uploads/2022/08/footer-cta.svg"
+            src={footerCtaImg}
             alt="BMS Payment Illustration"
           />
         </div>
