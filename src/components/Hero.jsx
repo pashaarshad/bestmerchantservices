@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import paymentCardsImg from '../assets/images/payment-cards.png'
 
 const Hero = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +56,7 @@ const Hero = () => {
 
         <div className="hero-payment-cards">
           <img
-            src="https://bestmerchantservices.com/wp-content/uploads/2022/08/payment-cards.png"
+            src={paymentCardsImg}
             alt="Payment Cards - Visa, Mastercard, American Express, Discover, Google Pay, Apple Pay"
           />
         </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import logoImg from '../assets/images/bms-logo-nav.png'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -34,7 +35,7 @@ const Navbar = () => {
       <nav className={`navbar ${scrolled || isInternalPage ? 'scrolled' : 'transparent'}`} id="navbar">
         <Link to="/" className="navbar-logo">
           <img
-            src="https://bestmerchantservices.com/wp-content/uploads/2023/10/bms-logo-nav.png"
+            src={logoImg}
             alt="Best Merchant Services"
           />
         </Link>

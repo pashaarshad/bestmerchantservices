@@ -1,4 +1,5 @@
 import React from 'react'
+import chipCardImg from '../assets/images/chip-douglas-card.png'
 
 const RetailIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="88" height="70" viewBox="0 0 88 70">
@@ -65,7 +66,7 @@ const Solutions = () => {
           <p className="section-subtitle">We have the largest selection of FREE equipment in the industry.</p>
           <div className="solutions-card-image">
             <img
-              src="https://bestmerchantservices.com/wp-content/uploads/2022/10/chip-douglas-card.png"
+              src={chipCardImg}
               alt="Chip Douglas Card"
             />
           </div>
