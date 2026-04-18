@@ -4,7 +4,6 @@ const Hero = () => {
   const [formData, setFormData] = useState({
     name: '', business: '', phone: '', email: '', message: ''
   })
-  const [captchaChecked, setCaptchaChecked] = useState(false)
 
   const bullets = [
     'FREE Equipment', 'Best Rates Offered',
@@ -19,13 +18,8 @@ const Hero = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (!captchaChecked) {
-      alert('Please verify that you are not a robot.')
-      return
-    }
     alert('Thank you! We will get back to you shortly.')
     setFormData({ name: '', business: '', phone: '', email: '', message: '' })
-    setCaptchaChecked(false)
   }
 
   return (
@@ -108,22 +102,6 @@ const Hero = () => {
             ></textarea>
           </div>
 
-          {/* reCAPTCHA "I'm not a robot" checkbox */}
-          <div className="recaptcha-container">
-            <div className="recaptcha-box" onClick={() => setCaptchaChecked(!captchaChecked)}>
-              <div className={`recaptcha-checkbox ${captchaChecked ? 'checked' : ''}`}>
-                <svg viewBox="0 0 24 24">
-                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
-                </svg>
-              </div>
-              <span className="recaptcha-label">I'm not a robot</span>
-              <div className="recaptcha-branding">
-                <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" />
-                <span>reCAPTCHA</span>
-              </div>
-            </div>
-          </div>
-
           <button type="submit" className="form-submit-btn">GET STARTED</button>
 
           <p className="form-disclaimer">
@@ -136,3 +114,4 @@ const Hero = () => {
 }
 
 export default Hero
+
