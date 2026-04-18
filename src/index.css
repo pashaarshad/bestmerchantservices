@@ -160,7 +160,9 @@ img {
   background: linear-gradient(135deg, #1b53e0 0%, #3b6ff0 50%, #5984f1 100%);
   display: flex;
   align-items: center;
-  padding: 120px 60px 80px;
+  justify-content: center;
+  gap: 40px;
+  padding: 120px 40px 80px;
   position: relative;
   overflow: hidden;
 }
@@ -190,7 +192,7 @@ img {
 .hero-content {
   flex: 1;
   color: #fff;
-  max-width: 550px;
+  max-width: 540px;
   z-index: 1;
 }
 
@@ -268,8 +270,88 @@ img {
 /* ===== HERO FORM ===== */
 .hero-form-wrapper {
   flex: 1;
-  max-width: 480px;
+  max-width: 520px;
+  min-width: 420px;
   z-index: 1;
+}
+
+/* ===== RECAPTCHA ===== */
+.recaptcha-container {
+  margin: 8px 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+.recaptcha-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  padding: 10px 14px;
+  min-height: 46px;
+  width: fit-content;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.recaptcha-box:hover {
+  border-color: #b3b3b3;
+}
+
+.recaptcha-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #c1c1c1;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.recaptcha-checkbox.checked {
+  background: #4caf50;
+  border-color: #4caf50;
+}
+
+.recaptcha-checkbox.checked svg {
+  display: block;
+}
+
+.recaptcha-checkbox svg {
+  display: none;
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+}
+
+.recaptcha-label {
+  font-size: 14px;
+  color: #555;
+  user-select: none;
+}
+
+.recaptcha-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  padding-left: 16px;
+}
+
+.recaptcha-branding img {
+  width: 42px;
+  height: auto;
+}
+
+.recaptcha-branding span {
+  font-size: 8px;
+  color: #999;
+  margin-top: 2px;
 }
 
 .hero-form {
