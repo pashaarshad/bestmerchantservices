@@ -11,6 +11,9 @@ import Gallery from '../components/Gallery'
 import POS from '../components/POS'
 import FooterCTA from '../components/FooterCTA'
 
+
+
+
 const Home = () => {
   return (
     <>
