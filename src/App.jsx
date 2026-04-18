@@ -10,7 +10,7 @@ import PriceMatch from './components/PriceMatch'
 import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
 import POS from './components/POS'
-import Blog from './components/Blog'
+import FooterCTA from './components/FooterCTA'
 import Footer from './components/Footer'
 
 function App() {
@@ -27,10 +27,11 @@ function App() {
       <Testimonials />
       <Gallery />
       <POS />
-      <Blog />
+      <FooterCTA />
       <Footer />
     </>
   )
 }
 
 export default App
+
