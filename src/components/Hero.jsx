@@ -33,7 +33,7 @@ const Hero = () => {
       <div className="hero-content">
         <h1 className="hero-title">
           <span className="highlight">
-            Start Accepting
+            <strong>Start Accepting</strong>
             <svg viewBox="0 0 300 12" preserveAspectRatio="none">
               <path d="M0 8 Q75 0 150 8 Q225 16 300 8" stroke="#9bc63c" strokeWidth="3" fill="none"/>
             </svg>

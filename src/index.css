@@ -76,24 +76,29 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   position: relative;
-  padding-bottom: 4px;
-  transition: color 0.3s;
+  padding: 28px 0;
+  transition: color 0.3s, background 0.3s;
 }
 
-.navbar-links a::after {
+.navbar-links a::before {
   content: '';
   position: absolute;
-  bottom: -2px;
+  top: 0;
   left: 0;
-  width: 0;
-  height: 2px;
+  width: 100%;
+  height: 3px;
   background: #fff;
-  transition: width 0.3s;
+  transform: scaleX(0);
+  transition: transform 0.3s;
 }
 
-.navbar-links a:hover::after,
-.navbar-links a.active::after {
-  width: 100%;
+.navbar-links a:hover {
+  color: #a8c4ff;
+}
+
+.navbar-links a:hover::before,
+.navbar-links a.active::before {
+  transform: scaleX(1);
 }
 
 .navbar-call {
@@ -106,11 +111,12 @@ img {
 .navbar-call-icon {
   width: 46px;
   height: 46px;
-  border: 2px solid rgba(255,255,255,0.4);
+  background: linear-gradient(135deg, #9bc63c, #349044);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 8px rgba(52, 144, 68, 0.4);
 }
 
 .navbar-call-icon svg {
@@ -198,9 +204,13 @@ img {
 
 .hero-title {
   font-size: 56px;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.15;
   margin-bottom: 30px;
+}
+
+.hero-title strong {
+  font-weight: 900;
 }
 
 .hero-title .highlight {
@@ -825,12 +835,30 @@ img {
   margin-top: 10px;
 }
 
-.testimonials-grid {
+.testimonials-slider-wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.testimonials-slider-wrapper .swiper {
+  padding-bottom: 50px;
+}
+
+.testimonials-slider-wrapper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.testimonials-slider-wrapper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  opacity: 1;
+  transition: background 0.3s;
+}
+
+.testimonials-slider-wrapper .swiper-pagination-bullet-active {
+  background: #1b53e0;
 }
 
 .testimonial-card {
@@ -839,6 +867,9 @@ img {
   border-radius: 12px;
   padding: 35px 30px;
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial-card:hover {
@@ -850,13 +881,12 @@ img {
   display: flex;
   gap: 3px;
   margin-bottom: 15px;
-  justify-content: center;
 }
 
 .testimonial-stars svg {
   width: 18px;
   height: 18px;
-  fill: #f5a623;
+  fill: #e8652c;
 }
 
 .testimonial-text {
@@ -865,7 +895,7 @@ img {
   line-height: 1.7;
   text-align: center;
   margin-bottom: 25px;
-  min-height: 100px;
+  flex: 1;
 }
 
 .testimonial-author {
