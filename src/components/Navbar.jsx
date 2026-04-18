@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,29 +14,40 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location.pathname])
+
   const links = [
-    { label: 'Home', href: '#' },
-    { label: 'About Us', href: '#about' },
-    { label: 'Our Services', href: '#our-solutions' },
-    { label: 'Partners', href: '#partners' },
-    { label: 'Contact Us', href: '#contact' },
+    { label: 'Home', to: '/' },
+    { label: 'About Us', to: '/about-us' },
+    { label: 'Our Services', to: '/our-services' },
+    { label: 'Partners', to: '/partners' },
+    { label: 'Contact Us', to: '/contact-us' },
   ]
+
+  const isInternalPage = location.pathname !== '/'
 
   return (
     <>
-      <nav className={`navbar ${scrolled ? 'scrolled' : 'transparent'}`} id="navbar">
-        <a href="#" className="navbar-logo">
+      <nav className={`navbar ${scrolled || isInternalPage ? 'scrolled' : 'transparent'}`} id="navbar">
+        <Link to="/" className="navbar-logo">
           <img
             src="https://bestmerchantservices.com/wp-content/uploads/2023/10/bms-logo-nav.png"
             alt="Best Merchant Services"
           />
-        </a>
+        </Link>
 
         <div className="navbar-links">
           {links.map((link, i) => (
-            <a key={i} href={link.href} className={i === 0 ? 'active' : ''}>
+            <Link
+              key={i}
+              to={link.to}
+              className={location.pathname === link.to ? 'active' : ''}
+            >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -45,7 +58,7 @@ const Navbar = () => {
             </svg>
           </div>
           <div className="navbar-call-text">
-            <span>Give us a call</span>
+            <span>GIVE US A CALL</span>
             <span>(800) 383-1553</span>
           </div>
         </a>
@@ -60,16 +73,16 @@ const Navbar = () => {
       <div className={`mobile-menu ${mobileOpen ? 'open' : ''}`}>
         <div className="mobile-menu-close" onClick={() => setMobileOpen(false)}></div>
         {links.map((link, i) => (
-          <a key={i} href={link.href} onClick={() => setMobileOpen(false)}>
+          <Link key={i} to={link.to} onClick={() => setMobileOpen(false)}>
             {link.label}
-          </a>
+          </Link>
         ))}
         <a href="tel:8003831553" onClick={() => setMobileOpen(false)}>
           (800) 383-1553
         </a>
-        <a href="#contact" className="mobile-cta" onClick={() => setMobileOpen(false)}>
+        <Link to="/contact-us" className="mobile-cta" onClick={() => setMobileOpen(false)}>
           Get Free Quote
-        </a>
+        </Link>
       </div>
     </>
   )

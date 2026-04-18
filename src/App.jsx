@@ -1,37 +1,27 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Solutions from './components/Solutions'
-import Contactless from './components/Contactless'
-import Terminals from './components/Terminals'
-import CTA from './components/CTA'
-import Benefits from './components/Benefits'
-import PriceMatch from './components/PriceMatch'
-import Testimonials from './components/Testimonials'
-import Gallery from './components/Gallery'
-import POS from './components/POS'
-import FooterCTA from './components/FooterCTA'
 import Footer from './components/Footer'
+import Home from './pages/Home'
+import AboutUs from './pages/AboutUs'
+import OurServices from './pages/OurServices'
+import Partners from './pages/Partners'
+import ContactUs from './pages/ContactUs'
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Hero />
-      <Solutions />
-      <Contactless />
-      <Terminals />
-      <CTA />
-      <Benefits />
-      <PriceMatch />
-      <Testimonials />
-      <Gallery />
-      <POS />
-      <FooterCTA />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/our-services" element={<OurServices />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   )
 }
 
 export default App
-

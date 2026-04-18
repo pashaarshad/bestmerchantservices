@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const FooterCTA = () => {
   return (
@@ -7,7 +8,7 @@ const FooterCTA = () => {
         <h2 className="footer-cta-title">
           Join the BMS family and get all of the solutions you need. And none you don't.
         </h2>
-        <a href="#headers" className="btn-footer-cta">GET FREE QUOTE</a>
+        <Link to="/contact-us" className="btn-footer-cta">GET FREE QUOTE</Link>
         <div className="footer-cta-image">
           <img
             src="https://bestmerchantservices.com/wp-content/uploads/2022/08/footer-cta.svg"

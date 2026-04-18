@@ -1,14 +1,17 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer className="footer" id="contact">
       <div className="footer-top">
         <div className="footer-brand">
-          <img
-            src="https://bestmerchantservices.com/wp-content/uploads/2023/10/bms-logo-nav.png"
-            alt="Best Merchant Services"
-          />
+          <Link to="/">
+            <img
+              src="https://bestmerchantservices.com/wp-content/uploads/2023/10/bms-logo-nav.png"
+              alt="Best Merchant Services"
+            />
+          </Link>
           <p className="footer-phone">
             <a href="tel:8003831553">(800) 383-1553</a>
           </p>
@@ -17,25 +20,25 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#">Equipments</a></li>
-            <li><a href="#our-solutions">Our Services</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about-us">About Us</Link></li>
+            <li><Link to="/our-services">Equipments</Link></li>
+            <li><Link to="/our-services">Our Services</Link></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#partners">Partners</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><Link to="/partners">Partners</Link></li>
+            <li><Link to="/contact-us">Contact Us</Link></li>
           </ul>
         </div>
 
         <div className="footer-column">
           <h4>Solutions</h4>
           <ul>
-            <li><a href="#">Merchant Accounts</a></li>
-            <li><a href="#">Credit Card Machines</a></li>
-            <li><a href="#">Small Business Loans</a></li>
-            <li><a href="#">High Risk Merchant Accounts</a></li>
-            <li><a href="#">Bad Credit Merchant Account</a></li>
-            <li><a href="#">Clover Station Duo POS</a></li>
+            <li><Link to="/our-services">Merchant Accounts</Link></li>
+            <li><Link to="/our-services#chip-cards">Credit Card Machines</Link></li>
+            <li><Link to="/our-services#small-business-loans">Small Business Loans</Link></li>
+            <li><Link to="/our-services#high-risk">High Risk Merchant Accounts</Link></li>
+            <li><Link to="/our-services">Bad Credit Merchant Account</Link></li>
+            <li><Link to="/our-services">Clover Station Duo POS</Link></li>
           </ul>
         </div>
 
