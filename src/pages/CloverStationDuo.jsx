@@ -298,14 +298,12 @@ const CloverStationDuo = () => {
           <h2 className="clover-apps-heading">Power Your Business With Apps From Clover.</h2>
           <p className="clover-apps-desc">Clover merchant processing devices can sync with helpful applications! Below are some of the top merchant processing apps to consider using to enhance your business.</p>
           
-          <div className="clover-apps-card">
+          <div className="clover-apps-grid">
             {apps.map((app, i) => (
-              <div key={i} className="clover-app-item">
+              <div key={i} className="clover-app-card">
                 <img src={app.img} alt={app.title} />
-                <div>
-                  <h4>{app.title}</h4>
-                  <p>{app.desc}</p>
-                </div>
+                <h4>{app.title}</h4>
+                <p>{app.desc}</p>
               </div>
             ))}
           </div>

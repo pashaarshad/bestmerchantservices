@@ -2311,44 +2311,39 @@ img {
   font-size: 15px;
 }
 
-.clover-apps-card {
+.clover-apps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.clover-app-card {
   background: #fff;
   border-radius: 10px;
-  padding: 40px;
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.clover-app-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 25px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.clover-app-item:last-child {
-  border-bottom: none;
-}
-
-.clover-app-item img {
-  width: 60px;
-  height: 60px;
+.clover-app-card img {
+  width: 64px;
+  height: 64px;
   object-fit: contain;
-  flex-shrink: 0;
+  margin: 0 auto 20px;
+  display: block;
 }
 
-.clover-app-item h4 {
+.clover-app-card h4 {
   font-size: 18px;
   font-weight: 700;
   color: #1a1a2e;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
-.clover-app-item p {
-  font-size: 15px;
+.clover-app-card p {
+  font-size: 14px;
   color: #666;
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -2397,5 +2392,8 @@ img {
   .clover-steps-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .clover-apps-grid {
+    grid-template-columns: 1fr;
   }
 }
