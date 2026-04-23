@@ -274,7 +274,7 @@ const CloverStationDuo = () => {
       </section>
 
       {/* How It Works */}
-      <section style={{ padding: 0 }}>
+      <section className="clover-how-it-works-section">
         <div className="clover-how-it-works-grid">
           <div className="clover-how-it-works-text">
             <h2 style={{ fontSize: '36px', fontWeight: 700, color: '#1a1a2e', marginBottom: '20px' }}>How Clover Station Duo Works</h2>
