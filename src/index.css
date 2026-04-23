@@ -2487,3 +2487,403 @@ img {
     padding-bottom: 0;
   }
 }
+
+/* ===== BAD CREDIT PAGE ===== */
+.bad-credit-hero {
+  background: #3b71e1;
+  color: #fff;
+}
+
+.bad-credit-hero-inner {
+  display: flex;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bad-credit-hero-text {
+  flex: 1;
+  padding: 100px 60px 100px 20px;
+}
+
+.bad-credit-hero-text h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  position: relative;
+  display: block;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-underline-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-green-underline {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 14px;
+}
+
+.bad-credit-hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.bad-credit-hero-box-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.bad-credit-hero-quote-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 80px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.bad-credit-hero-quote-box h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+.bad-credit-text-section {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.bad-credit-text-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bad-credit-text-inner p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.bad-credit-reliable-section {
+  padding: 80px 20px;
+  background: #F5F7FA;
+}
+
+.bad-credit-reliable-intro {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.bad-credit-reliable-intro h2 {
+  font-size: 36px;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.bad-credit-reliable-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  align-items: center;
+}
+
+.bad-credit-reliable-grid img {
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.bad-credit-lists-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.bad-credit-list {
+  flex: 1;
+}
+
+.bad-credit-list h3 {
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.blue-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.blue-bullet-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.blue-bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  background-image: linear-gradient(45deg, #5984f1 0%, #1b53e0 100%);
+  border-radius: 50%;
+}
+
+.bad-credit-blue-banner {
+  background-color: #1b53e0;
+  padding: 60px 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bad-credit-blue-banner h3 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.bad-credit-blue-banner p {
+  color: #d1dcf9;
+  margin: 0;
+  font-size: 16px;
+  max-width: 600px;
+}
+
+.bad-credit-types-section {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.bad-credit-types-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.bad-credit-types-header h2 {
+  font-size: 42px;
+  color: #1a1a2e;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.bad-credit-types-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bad-credit-type-card {
+  padding: 50px 40px;
+}
+
+.bad-credit-type-card:nth-child(odd) {
+  border-right: 1px solid #e5e7eb;
+}
+
+.bad-credit-type-card:nth-child(1),
+.bad-credit-type-card:nth-child(2) {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.bad-credit-type-card .icon-wrapper {
+  margin-bottom: 24px;
+}
+
+.bad-credit-type-card h3 {
+  font-size: 22px;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+.bad-credit-type-card p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.bad-credit-faq-section {
+  padding: 80px 20px;
+  background: #f0f4fa;
+}
+
+.bad-credit-faq-intro {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.bad-credit-faq-intro h2 {
+  font-size: 36px;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.bad-credit-faq-intro p {
+  color: #555;
+  font-size: 16px;
+}
+
+.bad-credit-faq-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.faq-question {
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: #111;
+}
+
+.faq-icon {
+  font-size: 20px;
+  color: #1b53e0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #1b53e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.faq-icon.open {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 25px 20px;
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.bad-credit-cta-section {
+  background-color: #3b71e1; /* The lighter blue in screenshot */
+  padding: 80px 20px;
+}
+
+.bad-credit-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.bad-credit-cta-grid img {
+  max-width: 100%;
+}
+
+.bad-credit-cta-text h2 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.bad-credit-cta-text p {
+  color: #fff;
+  opacity: 0.9;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .bad-credit-hero {
+    background: #1b53e0;
+  }
+  .bad-credit-hero-inner {
+    flex-direction: column;
+  }
+  .bad-credit-hero-text {
+    max-width: 100%;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .bad-credit-hero-text h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .bad-credit-hero-text p {
+    margin: 0 auto;
+  }
+  .bad-credit-hero-form {
+    padding: 60px 20px;
+    background-color: #f8f9fc;
+  }
+  .bad-credit-reliable-grid,
+  .bad-credit-lists-grid,
+  .bad-credit-types-header,
+  .bad-credit-types-grid,
+  .bad-credit-cta-grid {
+    grid-template-columns: 1fr;
+  }
+  .bad-credit-blue-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .bad-credit-type-card:nth-child(odd) {
+    border-right: none;
+  }
+  .bad-credit-type-card:nth-child(1),
+  .bad-credit-type-card:nth-child(2),
+  .bad-credit-type-card:nth-child(3) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
