@@ -1,5 +1,6 @@
 import React from 'react'
 import FooterCTA from '../components/FooterCTA'
+import PriceMatch from '../components/PriceMatch'
 import cloverDuoImg from '../assets/images/clover-pos-updated.jpg'
 import cloverWorksImg from '../assets/images/how-clover-station-works.jpg'
 import mainStreetImg from '../assets/images/main-street-insights.png'
@@ -60,6 +61,63 @@ const SameDayIcon = () => (
     <circle cx="48" cy="44" r="10" stroke="#1b53e0" strokeWidth="2" fill="none" />
     <circle cx="48" cy="44" r="8" fill="#1b53e0" opacity="0.15" />
     <path d="M44 44l3 3 6-6" stroke="#eceff8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+  </svg>
+)
+
+const FreePaymentGatewayIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+    <circle cx="40" cy="40" r="40" fill="#fff" />
+    <rect x="28" y="22" width="24" height="36" rx="3" stroke="#1b53e0" strokeWidth="2" fill="#eceff8" />
+    <path d="M40 22v4M34 50h12" stroke="#1b53e0" strokeWidth="1.5" strokeLinecap="round" />
+    <circle cx="40" cy="36" r="12" fill="#1b53e0" opacity="0.15" />
+    <path d="M34 36a6 6 0 0112 0" stroke="#1b53e0" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M37 33a9 9 0 016 0" stroke="#1b53e0" strokeWidth="1.5" strokeLinecap="round" />
+  </svg>
+)
+
+const CashDiscountIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+    <circle cx="40" cy="40" r="40" fill="#fff" />
+    <circle cx="40" cy="36" r="16" stroke="#1b53e0" strokeWidth="2" fill="#eceff8" />
+    <circle cx="40" cy="36" r="14" fill="#1b53e0" opacity="0.15" />
+    <path d="M34 30l12 12" stroke="#1b53e0" strokeWidth="2" strokeLinecap="round" />
+    <circle cx="35" cy="41" r="2" fill="#1b53e0" />
+    <circle cx="45" cy="31" r="2" fill="#1b53e0" />
+    <path d="M34 54l6 6 6-6" stroke="#1b53e0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+    <path d="M40 52v8" stroke="#1b53e0" strokeWidth="2" strokeLinecap="round" />
+  </svg>
+)
+
+const LowestRatesIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+    <circle cx="40" cy="40" r="40" fill="#fff" />
+    <path d="M30 46c0 6 4.5 10 10 10s10-4 10-10c0-8-10-12-10-12s-10 4-10 12z" stroke="#1b53e0" strokeWidth="2" fill="#eceff8" />
+    <path d="M36 28h8v6h-8v-6z" stroke="#1b53e0" strokeWidth="1.5" fill="#1b53e0" opacity="0.15" />
+    <path d="M34 26h12M40 42v8M36 46h8" stroke="#1b53e0" strokeWidth="2" strokeLinecap="round" />
+    <path d="M22 36l6 6 6-6" stroke="#1b53e0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+    <path d="M28 30v12" stroke="#1b53e0" strokeWidth="1.5" strokeLinecap="round" />
+  </svg>
+)
+
+const PosSpecialistsIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+    <circle cx="40" cy="40" r="40" fill="#fff" />
+    <circle cx="40" cy="30" r="8" stroke="#1b53e0" strokeWidth="2" fill="#eceff8" />
+    <path d="M24 54c0-8 6-12 16-12s16 4 16 12" stroke="#1b53e0" strokeWidth="2" strokeLinecap="round" fill="none" />
+    <circle cx="50" cy="44" r="6" stroke="#1b53e0" strokeWidth="1.5" fill="#1b53e0" opacity="0.15" />
+    <path d="M48 42l4 4M52 42l-4 4" stroke="#1b53e0" strokeWidth="1.5" strokeLinecap="round" />
+  </svg>
+)
+
+const RateGuaranteeIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+    <circle cx="40" cy="40" r="40" fill="#fff" />
+    <path d="M30 20h12l14 14-12 12-14-14v-12z" stroke="#1b53e0" strokeWidth="2" fill="#eceff8" />
+    <circle cx="36" cy="26" r="2" fill="#1b53e0" />
+    <path d="M42 36l4-4" stroke="#1b53e0" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M46 40l4-4" stroke="#1b53e0" strokeWidth="1.5" strokeLinecap="round" />
+    <circle cx="54" cy="50" r="8" fill="#1b53e0" opacity="0.15" />
+    <path d="M50 50h4v-4" stroke="#1b53e0" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
   </svg>
 )
 

@@ -2397,3 +2397,93 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== WHY BEST MERCHANT SERVICES ===== */
+.why-bms-section {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.why-bms-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 60px;
+}
+
+.why-bms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-bms-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.why-bms-item:not(:nth-child(4n))::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background-color: #eee;
+}
+
+.why-bms-icon-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-bms-item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .why-bms-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 0;
+  }
+  .why-bms-item:not(:nth-child(4n))::after {
+    display: none;
+  }
+  .why-bms-item:not(:nth-child(2n))::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 80%;
+    width: 1px;
+    background-color: #eee;
+  }
+}
+
+@media (max-width: 640px) {
+  .why-bms-grid {
+    grid-template-columns: 1fr;
+  }
+  .why-bms-item::after {
+    display: none !important;
+  }
+  .why-bms-item {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+  .why-bms-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
