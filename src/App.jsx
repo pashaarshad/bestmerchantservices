@@ -8,7 +8,7 @@ import AboutUs from './pages/AboutUs'
 import OurServices from './pages/OurServices'
 import Partners from './pages/Partners'
 import ContactUs from './pages/ContactUs'
-import Retail from './pages/Retail'
+import CreditCardMachines from './pages/CreditCardMachines'
 import HighRisk from './pages/HighRisk'
 import BadCredit from './pages/BadCredit'
 import CloverStationDuo from './pages/CloverStationDuo'
@@ -24,7 +24,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/our-services" element={<OurServices />} />
-        <Route path="/our-services/retail" element={<Retail />} />
+        <Route path="/our-services/retail" element={<CreditCardMachines initialTab="retail" />} />
+        <Route path="/our-services/wireless" element={<CreditCardMachines initialTab="wireless" />} />
+        <Route path="/our-services/mobile" element={<CreditCardMachines initialTab="mobile" />} />
+        <Route path="/our-services/pos-system" element={<CreditCardMachines initialTab="pos" />} />
+        <Route path="/our-services/e-commerce" element={<CreditCardMachines initialTab="ecommerce" />} />
         <Route path="/high-risk-merchant-accounts" element={<HighRisk />} />
         <Route path="/merchant-account-for-bad-credit" element={<BadCredit />} />
         <Route path="/clover-station-duo" element={<CloverStationDuo />} />
