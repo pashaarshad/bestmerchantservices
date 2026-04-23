@@ -2052,3 +2052,345 @@ img {
     font-size: 28px;
   }
 }
+
+/* ===== CLOVER DUO PAGE ===== */
+.clover-how-it-works-grid {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.clover-how-it-works-text {
+  padding: 140px 60px 60px;
+  background-color: #fff;
+}
+
+.clover-how-it-works-image {
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+.clover-how-it-works-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Clover Duo Content Centering */
+.clover-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.clover-hero-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.clover-hero-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.clover-hero-image .circle-bg {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.clover-hero-image img {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 550px;
+}
+
+.clover-hero-text h1 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.clover-hero-text h1 .highlight {
+  color: #1b53e0;
+}
+
+.clover-hero-text h1 .dark {
+  color: #1a1a2e;
+}
+
+.clover-pricing {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.clover-pricing .old-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.clover-pricing .new-price {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1b53e0;
+  line-height: 1;
+}
+
+.clover-features-list {
+  margin-bottom: 32px;
+}
+
+.clover-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.clover-blue-banner {
+  background-color: #1b53e0;
+  padding: 50px 0;
+}
+
+.clover-blue-banner-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.clover-blue-banner-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #fff;
+}
+
+.clover-blue-banner-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.clover-section-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+.clover-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.clover-spec-list li {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.clover-spec-list li .icon-wrap {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.clover-features-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.clover-feature-card {
+  background: #fff;
+  border: 1px solid #f3f4f6;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.clover-feature-card .icon-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.clover-feature-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+.clover-feature-card p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+}
+
+.clover-steps-section {
+  text-align: center;
+}
+
+.clover-steps-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.clover-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.clover-step-item {
+  text-align: center;
+}
+
+.clover-step-item .icon-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.clover-step-item h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.clover-step-item p {
+  color: #666;
+  font-size: 15px;
+}
+
+.clover-apps-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.clover-app-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 25px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.clover-app-item:last-child {
+  border-bottom: none;
+}
+
+.clover-app-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.clover-app-item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.clover-app-item p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.clover-apps-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.clover-apps-desc {
+  text-align: center;
+  color: #666;
+  margin-bottom: 48px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1024px) {
+  .clover-how-it-works-grid {
+    grid-template-columns: 1fr;
+  }
+  .clover-how-it-works-text {
+    padding: 60px 30px;
+  }
+  .clover-how-it-works-image {
+    padding: 30px;
+  }
+  .clover-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  .clover-hero-text h1 {
+    font-size: 36px;
+  }
+  .clover-blue-banner-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .clover-features-cards {
+    grid-template-columns: 1fr;
+  }
+  .clover-steps-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

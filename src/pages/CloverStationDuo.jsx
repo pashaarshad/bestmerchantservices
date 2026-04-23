@@ -2,6 +2,12 @@ import React from 'react'
 import FooterCTA from '../components/FooterCTA'
 import cloverDuoImg from '../assets/images/clover-pos-updated.jpg'
 import cloverWorksImg from '../assets/images/how-clover-station-works.jpg'
+import mainStreetImg from '../assets/images/main-street-insights.png'
+import timeClockImg from '../assets/images/time-clock.png'
+import quickbooksImg from '../assets/images/quickbooks-bycommerce-sync.png'
+import orderOutImg from '../assets/images/order-out.png'
+import davoImg from '../assets/images/DAVO-sales-tax.png'
+import checkAccImg from '../assets/images/check-acceptance.png'
 
 const CheckIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
@@ -110,52 +116,44 @@ const StepIcon = ({ number }) => (
   </svg>
 )
 
+const apps = [
+  { img: mainStreetImg, title: 'Main Street Insights', desc: 'Main Street Insights also called Clover Insights is a phenomenal tool that helps you better understand your business competition. With this app, you can see how profitable businesses in your area are and how many clients they have.' },
+  { img: timeClockImg, title: 'Time Clock', desc: 'Time Clock is a handy app that makes managing your staff and their shifts convenient and simple. You can track employee hours, create schedules, send shift reminders, and even post job openings.' },
+  { img: quickbooksImg, title: 'Quickbooks by Commerce Sync', desc: 'Data and analytics are essential for growing a business. This app can deliver insightful analytics and keep your business information organized, acting like a digital bookkeeper.' },
+  { img: orderOutImg, title: 'Order Out', desc: 'With Order Out, you can sync your third-party food delivery orders with your Clover system. Orders from apps like Uber or Doordash can be directly printed in your kitchen to save time and effort.' },
+  { img: davoImg, title: 'DAVO Sales Tax', desc: "Using DAVO Sales Tax you can automatically set aside your sales tax for the day and pay taxes online in full. It's an excellent application for monitoring tax requirements and storing sensitive tax documents." },
+  { img: checkAccImg, title: 'Check Acceptance', desc: "The Check Acceptance app allows you to digitally accept checks with lower processing fees. Receive checks quickly with no monthly minimum and benefit from the security of TeleCheck's warranty protection." },
+]
+
 const CloverStationDuo = () => {
   return (
     <>
-      {/* Custom Hero Section */}
+      {/* Hero Section */}
       <section style={{ backgroundColor: '#ECEFF8', padding: '100px 20px', position: 'relative', overflow: 'hidden' }}>
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-          {/* Left Side: Image */}
-          <div className="relative flex justify-center items-center py-10">
-            <div
-              className="absolute bg-white rounded-full"
-              style={{ width: '450px', height: '450px', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 0 }}
-            ></div>
-            <img src={cloverDuoImg} alt="Clover Station Duo" className="relative z-10 w-full max-w-[550px]" />
+        <div className="clover-hero-grid">
+          <div className="clover-hero-image">
+            <div className="circle-bg"></div>
+            <img src={cloverDuoImg} alt="Clover Station Duo" />
           </div>
-
-          {/* Right Side: Text & CTA */}
-          <div className="pr-4">
-            <h1 className="text-[46px] font-bold leading-[1.2] mb-6">
-              <span style={{ color: '#1b53e0' }}>Get Clover Station Duo FREE</span><br />
-              <span style={{ color: '#1a1a2e' }}>by signing up for our services</span>
+          <div className="clover-hero-text">
+            <h1>
+              <span className="highlight">Get Clover Station Duo FREE</span><br />
+              <span className="dark">by signing up for our services</span>
             </h1>
-
-            <div className="flex items-end gap-3 mb-8">
-              <span className="line-through font-bold" style={{ fontSize: '24px', color: '#999' }}>$1,299.00</span>
-              <span className="font-bold" style={{ fontSize: '36px', color: '#1b53e0', lineHeight: 1 }}>$0.00</span>
+            <div className="clover-pricing">
+              <span className="old-price">$1,299.00</span>
+              <span className="new-price">$0.00</span>
             </div>
-
-            <ul className="mb-8 space-y-4">
-              <li className="flex items-center gap-3 text-[18px] text-[#555]">
-                <CheckIcon /> All-in-one, feature-rich POS System
-              </li>
-              <li className="flex items-center gap-3 text-[18px] text-[#555]">
-                <CheckIcon /> Over 200 apps in Clover App Market
-              </li>
-              <li className="flex items-center gap-3 text-[18px] text-[#555]">
-                <CheckIcon /> Includes cash drawer, printer, scanner
-              </li>
+            <ul className="clover-features-list">
+              <li><CheckIcon /> All-in-one, feature-rich POS System</li>
+              <li><CheckIcon /> Over 200 apps in Clover App Market</li>
+              <li><CheckIcon /> Includes cash drawer, printer, scanner</li>
             </ul>
-
-            <div className="border-t border-dashed border-gray-400 my-8 opacity-50"></div>
-
+            <div style={{ borderTop: '1px dashed #bbb', margin: '32px 0', opacity: 0.5 }}></div>
             <a href="/contact-us" className="btn-green" style={{ display: 'inline-block', fontSize: '16px', padding: '16px 35px', borderRadius: '4px', textTransform: 'uppercase', fontWeight: 'bold' }}>
               GET THIS FREE!
             </a>
-
-            <p className="mt-4 text-[16px] italic text-[#666]">
+            <p style={{ marginTop: '16px', fontSize: '16px', fontStyle: 'italic', color: '#666' }}>
               <span style={{ color: '#1b53e0', fontStyle: 'normal' }}>*</span> Custom To Your Business
             </p>
           </div>
@@ -163,165 +161,112 @@ const CloverStationDuo = () => {
       </section>
 
       {/* Blue Features Banner */}
-      <section style={{ backgroundColor: '#1b53e0', padding: '50px 0' }}>
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-5">
-          <div className="flex items-center justify-center gap-4 text-white">
+      <section className="clover-blue-banner">
+        <div className="clover-blue-banner-inner">
+          <div className="clover-blue-banner-item">
             <FreeEquipmentIcon />
-            <h4 className="text-xl font-bold m-0 text-white">FREE Equipment</h4>
+            <h4>FREE Equipment</h4>
           </div>
-          <div className="flex items-center justify-center gap-4 text-white border-l border-r border-[#3a6bed] border-opacity-50">
+          <div className="clover-blue-banner-item">
             <ZeroFeesIcon />
-            <h4 className="text-xl font-bold m-0 text-white">Zero Set-Up Fees</h4>
+            <h4>Zero Set-Up Fees</h4>
           </div>
-          <div className="flex items-center justify-center gap-4 text-white">
+          <div className="clover-blue-banner-item">
             <SameDayIcon />
-            <h4 className="text-xl font-bold m-0 text-white">Same Day Approval</h4>
+            <h4>Same Day Approval</h4>
           </div>
         </div>
       </section>
 
-      {/* Main Content Area */}
-      <section className="section-padding bg-white">
-        <div className="max-w-[1200px] mx-auto px-5">
+      {/* Main Content */}
+      <section className="section-padding" style={{ backgroundColor: '#fff' }}>
+        <div className="clover-content-wrapper">
 
-          {/* Demo Section */}
-          <div className="mb-20">
-            <h2 className="text-[28px] font-bold text-[#1a1a2e] mb-4">Clover Station Duo Demo</h2>
-            <div className="h-[1px] bg-gray-200 mb-8 w-full"></div>
-            <div className="bg-black w-full aspect-video flex items-center justify-center rounded-sm">
-              <div className="w-[80px] h-[80px] bg-[#1b53e0] rounded-full flex items-center justify-center cursor-pointer hover:bg-blue-700 transition-colors">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5 3L19 12L5 21V3Z" fill="white" />
-                </svg>
+          {/* Demo */}
+          <div style={{ marginBottom: '80px' }}>
+            <h2 className="clover-section-heading">Clover Station Duo Demo</h2>
+            <div className="clover-divider"></div>
+            <div style={{ backgroundColor: '#000', width: '100%', aspectRatio: '16/9', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '4px' }}>
+              <div style={{ width: '80px', height: '80px', backgroundColor: '#1b53e0', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M5 3L19 12L5 21V3Z" fill="white" /></svg>
               </div>
             </div>
           </div>
 
           {/* Specifications */}
-          <div className="mb-20">
-            <h2 className="text-[28px] font-bold text-[#1a1a2e] mb-4">Specifications</h2>
-            <div className="h-[1px] bg-gray-200 mb-8 w-full"></div>
-            <ul className="space-y-4">
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span><strong>Payments:</strong> Accepts chip, swipe, and contactless payments including Apple Pay®, Google Pay® and Samsung Pay®</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span><strong>Screen:</strong> 14″ high-definition merchant-facing touch screen and 7″ customer-facing touch screen</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span><strong>Receipt printer:</strong> High-speed thermal dot receipt printer</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span><strong>Security:</strong> Clover Security end-to-end encryption</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span><strong>Camera &amp; Scanner:</strong> Dual 5 mega-pixel cameras with scanning software</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span><strong>Connectivity:</strong> WiFi and ethernet connectivity</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span><strong>Cash drawer:</strong> Includes a bill tray, coin tray, two keys, and a security cable.</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span><strong>PIN Pad:</strong> Virtual keypad for PIN entry</span>
-              </li>
+          <div style={{ marginBottom: '80px' }}>
+            <h2 className="clover-section-heading">Specifications</h2>
+            <div className="clover-divider"></div>
+            <ul className="clover-spec-list">
+              <li><span className="icon-wrap"><CheckIcon /></span><span><strong>Payments:</strong> Accepts chip, swipe, and contactless payments including Apple Pay®, Google Pay® and Samsung Pay®</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span><strong>Screen:</strong> 14″ high-definition merchant-facing touch screen and 7″ customer-facing touch screen</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span><strong>Receipt printer:</strong> High-speed thermal dot receipt printer</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span><strong>Security:</strong> Clover Security end-to-end encryption</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span><strong>Camera &amp; Scanner:</strong> Dual 5 mega-pixel cameras with scanning software</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span><strong>Connectivity:</strong> WiFi and ethernet connectivity</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span><strong>Cash drawer:</strong> Includes a bill tray, coin tray, two keys, and a security cable.</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span><strong>PIN Pad:</strong> Virtual keypad for PIN entry</span></li>
             </ul>
           </div>
 
           {/* Key Features & Benefits */}
-          <div className="mb-20">
-            <h2 className="text-[28px] font-bold text-[#1a1a2e] mb-4">Key Features &amp; Benefits</h2>
-            <div className="h-[1px] bg-gray-200 mb-8 w-full"></div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white border border-gray-100 rounded-lg p-10 shadow-sm text-center">
-                <div className="flex justify-center mb-6">
-                  <EasyToUseIcon />
-                </div>
-                <h4 className="text-[20px] font-bold text-[#1a1a2e] mb-4">Easy to Use and Ready to Go</h4>
-                <p className="text-[#666] leading-relaxed">Station Duo is ready for work right out of the box, and with intuitive software built in, training your staff is minimal.</p>
+          <div style={{ marginBottom: '80px' }}>
+            <h2 className="clover-section-heading">Key Features &amp; Benefits</h2>
+            <div className="clover-divider"></div>
+            <div className="clover-features-cards">
+              <div className="clover-feature-card">
+                <div className="icon-wrap"><EasyToUseIcon /></div>
+                <h4>Easy to Use and Ready to Go</h4>
+                <p>Station Duo is ready for work right out of the box, and with intuitive software built in, training your staff is minimal.</p>
               </div>
-              <div className="bg-white border border-gray-100 rounded-lg p-10 shadow-sm text-center">
-                <div className="flex justify-center mb-6">
-                  <AcceptPaymentIcon />
-                </div>
-                <h4 className="text-[20px] font-bold text-[#1a1a2e] mb-4">Accept Every Type of Payment</h4>
-                <p className="text-[#666] leading-relaxed">Let customers pay however they want. Credit or debit. Swipe, dip, or contactless payments like Apple Pay®, Google Pay™, and next generation payments like PayPal/Venmo® QR codes.</p>
+              <div className="clover-feature-card">
+                <div className="icon-wrap"><AcceptPaymentIcon /></div>
+                <h4>Accept Every Type of Payment</h4>
+                <p>Let customers pay however they want. Credit or debit. Swipe, dip, or contactless payments like Apple Pay®, Google Pay™, and next generation payments like PayPal/Venmo® QR codes.</p>
               </div>
-              <div className="bg-white border border-gray-100 rounded-lg p-10 shadow-sm text-center">
-                <div className="flex justify-center mb-6">
-                  <WeGotYourBackIcon />
-                </div>
-                <h4 className="text-[20px] font-bold text-[#1a1a2e] mb-4">We've Got Your Back</h4>
-                <p className="text-[#666] leading-relaxed">Protect your business and customer information with end-to-end encryption, integrated chip sensors, and optional fingerprint login.</p>
+              <div className="clover-feature-card">
+                <div className="icon-wrap"><WeGotYourBackIcon /></div>
+                <h4>We've Got Your Back</h4>
+                <p>Protect your business and customer information with end-to-end encryption, integrated chip sensors, and optional fingerprint login.</p>
               </div>
             </div>
           </div>
 
           {/* Device Variants */}
-          <div className="mb-20">
-            <h2 className="text-[28px] font-bold text-[#1a1a2e] mb-4">Device Variants Available</h2>
-            <div className="h-[1px] bg-gray-200 mb-8 w-full"></div>
-            <ul className="space-y-4">
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span>Clover Station Duo Bundle with CD (Tablet, Printer, Terminal, Kit, Cash Drawer)</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span>Clover Duo Bundle</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span>Clover Station Duo Starter Kit</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span>Clover Station Duo Display</span>
-              </li>
-              <li className="flex gap-3 text-[#555] text-lg">
-                <span className="mt-1"><CheckIcon /></span>
-                <span>Clover Station Duo Terminal</span>
-              </li>
+          <div style={{ marginBottom: '80px' }}>
+            <h2 className="clover-section-heading">Device Variants Available</h2>
+            <div className="clover-divider"></div>
+            <ul className="clover-spec-list">
+              <li><span className="icon-wrap"><CheckIcon /></span><span>Clover Station Duo Bundle with CD (Tablet, Printer, Terminal, Kit, Cash Drawer)</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span>Clover Duo Bundle</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span>Clover Station Duo Starter Kit</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span>Clover Station Duo Display</span></li>
+              <li><span className="icon-wrap"><CheckIcon /></span><span>Clover Station Duo Terminal</span></li>
             </ul>
           </div>
 
           {/* 3 Step Process */}
-          <div className="mb-20">
-            <h2 className="text-[32px] font-bold text-[#1a1a2e] text-center mb-16">Our Simple 3 Step Process</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="flex justify-center mb-6">
-                  <StepIcon number="1" />
-                </div>
-                <h4 className="text-[22px] font-bold text-[#1a1a2e] mb-3">Get in Touch</h4>
-                <p className="text-[#666]">Get in touch by filling up our contact form.</p>
+          <div className="clover-steps-section" style={{ marginBottom: '80px' }}>
+            <h2 className="clover-steps-title">Our Simple 3 Step Process</h2>
+            <div className="clover-steps-grid">
+              <div className="clover-step-item">
+                <div className="icon-wrap"><StepIcon number="1" /></div>
+                <h4>Get in Touch</h4>
+                <p>Get in touch by filling up our contact form.</p>
               </div>
-              <div className="text-center">
-                <div className="flex justify-center mb-6">
-                  <StepIcon number="2" />
-                </div>
-                <h4 className="text-[22px] font-bold text-[#1a1a2e] mb-3">Get an Instant Quote</h4>
-                <p className="text-[#666]">We prepare a quote custom tailored for your business needs.</p>
+              <div className="clover-step-item">
+                <div className="icon-wrap"><StepIcon number="2" /></div>
+                <h4>Get an Instant Quote</h4>
+                <p>We prepare a quote custom tailored for your business needs.</p>
               </div>
-              <div className="text-center">
-                <div className="flex justify-center mb-6">
-                  <StepIcon number="3" />
-                </div>
-                <h4 className="text-[22px] font-bold text-[#1a1a2e] mb-3">Start Processing</h4>
-                <p className="text-[#666]">Start processing payments online and in person and growing your business.</p>
+              <div className="clover-step-item">
+                <div className="icon-wrap"><StepIcon number="3" /></div>
+                <h4>Start Processing</h4>
+                <p>Start processing payments online and in person and growing your business.</p>
               </div>
             </div>
-            <div className="text-center mt-12">
-              <a href="/contact-us" className="btn-green inline-block">Request a Quote</a>
+            <div style={{ textAlign: 'center', marginTop: '48px' }}>
+              <a href="/contact-us" className="btn-green" style={{ display: 'inline-block' }}>Request a Quote</a>
             </div>
           </div>
 
@@ -329,20 +274,44 @@ const CloverStationDuo = () => {
       </section>
 
       {/* How It Works */}
-      <section className="about-section" style={{ backgroundColor: '#ECEFF8' }}>
-        <div className="about-container about-container-reverse">
-          <div className="about-text">
-            <h2>How Clover Station Duo Works</h2>
-            <p className="mb-4">One of the best merchant processing devices is the Clover Station Duo, an all-in-one POS that can increase productivity. This point of sales system is ideal for retailers, restaurants, and most service businesses.</p>
-            <p className="mb-4">Essentially, anywhere that customers may stand in line to check out! One of the best features of the Clover Duo is the two screens, which help keep lines moving along and make it easy for workers to complete transactions.</p>
-            <p className="mb-4">The Clover Station has a 14-inch HD display for workers and a seven-inch touchscreen for guests to confirm the transaction, leave a tip, accept rewards, or request a receipt. The POS is also compact and sleek, so you can keep your business organized and attractive without using clunky systems.</p>
-            <p className="mb-4">The Clover Duo also has excellent customizability, so you can adjust the system to meet your business needs. Set up handheld devices with electronic accessories like scanners and printers. Tie together multiple devices, from tablets to countertop computers.</p>
-            <p className="mb-4">The flexibility of this system makes it easy to scale the POS with your business as it grows! The Clover Station is a secure and intuitive system that is easy to learn and will protect your and your customer's data.</p>
-            <p className="mb-6">The possibilities with this system are endless, as you can create loyalty programs, customize transactions, and more, putting all the POS power in your hands.</p>
-            <a href="/contact-us" className="btn-green inline-block">Get This Free!</a>
+      <section style={{ padding: 0 }}>
+        <div className="clover-how-it-works-grid">
+          <div className="clover-how-it-works-text">
+            <h2 style={{ fontSize: '36px', fontWeight: 700, color: '#1a1a2e', marginBottom: '20px' }}>How Clover Station Duo Works</h2>
+            <p style={{ fontSize: '16px', color: '#555', lineHeight: 1.8, marginBottom: '15px' }}>One of the best merchant processing devices is the Clover Station Duo, an all-in-one POS that can increase productivity. This point of sales system is ideal for retailers, restaurants, and most service businesses.</p>
+            <p style={{ fontSize: '16px', color: '#555', lineHeight: 1.8, marginBottom: '15px' }}>Essentially, anywhere that customers may stand in line to check out! One of the best features of the Clover Duo is the two screens, which help keep lines moving along and make it easy for workers to complete transactions.</p>
+            <p style={{ fontSize: '16px', color: '#555', lineHeight: 1.8, marginBottom: '15px' }}>The Clover Station has a 14-inch HD display for workers and a seven-inch touchscreen for guests to confirm the transaction, leave a tip, accept rewards, or request a receipt. The POS is also compact and sleek, so you can keep your business organized and attractive without using clunky systems.</p>
+            <p style={{ fontSize: '16px', color: '#555', lineHeight: 1.8, marginBottom: '15px' }}>The Clover Duo also has excellent customizability, so you can adjust the system to meet your business needs. Set up handheld devices with electronic accessories like scanners and printers. Tie together multiple devices, from tablets to countertop computers.</p>
+            <p style={{ fontSize: '16px', color: '#555', lineHeight: 1.8, marginBottom: '15px' }}>The flexibility of this system makes it easy to scale the POS with your business as it grows! The Clover Station is a secure and intuitive system that is easy to learn and will protect your and your customer's data.</p>
+            <p style={{ fontSize: '16px', color: '#555', lineHeight: 1.8, marginBottom: '25px' }}>The possibilities with this system are endless, as you can create loyalty programs, customize transactions, and more, putting all the POS power in your hands.</p>
+            <a href="/contact-us" className="btn-green" style={{ display: 'inline-block' }}>Get This Free!</a>
           </div>
-          <div className="about-image">
+          <div className="clover-how-it-works-image">
             <img src={cloverWorksImg} alt="How Clover Station Works" />
+          </div>
+        </div>
+      </section>
+
+      {/* Power Your Business With Apps */}
+      <section className="section-padding" style={{ backgroundColor: '#ECEFF8' }}>
+        <div className="clover-content-wrapper">
+          <h2 className="clover-apps-heading">Power Your Business With Apps From Clover.</h2>
+          <p className="clover-apps-desc">Clover merchant processing devices can sync with helpful applications! Below are some of the top merchant processing apps to consider using to enhance your business.</p>
+          
+          <div className="clover-apps-card">
+            {apps.map((app, i) => (
+              <div key={i} className="clover-app-item">
+                <img src={app.img} alt={app.title} />
+                <div>
+                  <h4>{app.title}</h4>
+                  <p>{app.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '48px' }}>
+            <a href="/contact-us" className="btn-green" style={{ display: 'inline-block' }}>Get Free Quote</a>
           </div>
         </div>
       </section>
