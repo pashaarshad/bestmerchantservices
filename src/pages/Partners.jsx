@@ -30,118 +30,156 @@ const Partners = () => {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* How It Works - 2-column layout matching original */}
       <section className="about-section about-section-alt" id="how-it-works">
-        <div className="partners-how-it-works">
-          <h2>How It Works</h2>
-          <p>At BMS, we want our partners to have every possible resource available for making account signing a seamless process. You make the sale and submit the application; we take it from there. You have more time to focus on sales because we take care of everything else.</p>
-
-          <div className="partners-steps">
-            <div className="partner-step">
-              <div className="partner-step-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#1b53e0" strokeWidth="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14,2 14,8 20,8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
+        <div className="partners-how-it-works-split">
+          <div className="partners-how-left">
+            <h2>How It Works</h2>
+            <p>At BMS, we want our partners to have every possible resource available for making account signing a seamless process. You make the sale and submit the application; we take it from there. You have more time to focus on sales because we take care of everything else.</p>
+            <a href="#becoming-partner" className="btn-green">GET STARTED</a>
+          </div>
+          <div className="partners-how-right">
+            <div className="partner-step-row">
+              <div className="partner-step-icon-img">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="50" height="50">
+                  <rect x="12" y="8" width="40" height="48" rx="3" fill="#e8eef9" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M22 4h20v8a2 2 0 01-2 2H24a2 2 0 01-2-2V4z" fill="#4a7cdc"/>
+                  <rect x="20" y="20" width="24" height="2" rx="1" fill="#4a7cdc" opacity="0.5"/>
+                  <rect x="20" y="26" width="18" height="2" rx="1" fill="#4a7cdc" opacity="0.5"/>
+                  <rect x="20" y="32" width="24" height="2" rx="1" fill="#4a7cdc" opacity="0.5"/>
+                  <rect x="20" y="38" width="14" height="2" rx="1" fill="#4a7cdc" opacity="0.5"/>
+                  <path d="M38 52l-6-3-6 3V40h12z" fill="#4a7cdc" opacity="0.3"/>
                 </svg>
               </div>
-              <h4>Application</h4>
-              <p>Simply submit the application via fax, email, or e-signature. The application will be entered and reviewed by our team.</p>
+              <div className="partner-step-text">
+                <h4>Application</h4>
+                <p>Simply submit the application via fax, email, or e-signature. The application will be entered and reviewed by our team.</p>
+              </div>
             </div>
-            <div className="partner-step">
-              <div className="partner-step-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#1b53e0" strokeWidth="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <polyline points="22,4 12,14.01 9,11.01"/>
+            <div className="partner-step-row">
+              <div className="partner-step-icon-img">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="50" height="50">
+                  <rect x="6" y="16" width="40" height="32" rx="3" fill="#e8eef9" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M6 22l20 12 20-12" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <circle cx="48" cy="20" r="12" fill="#4dbd74" stroke="#fff" strokeWidth="2"/>
+                  <path d="M43 20l3 3 7-7" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h4>Approval</h4>
-              <p>Applications are generally reviewed the day they are submitted. You may have an answer within hours of your submission.</p>
+              <div className="partner-step-text">
+                <h4>Approval</h4>
+                <p>Applications are generally reviewed the day they are submitted. You may have an answer within hours of your submission.</p>
+              </div>
             </div>
-            <div className="partner-step">
-              <div className="partner-step-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#1b53e0" strokeWidth="2">
-                  <rect x="1" y="3" width="15" height="13"/>
-                  <polygon points="16,8 20,8 23,11 23,16 16,16 16,8"/>
-                  <circle cx="5.5" cy="18.5" r="2.5"/>
-                  <circle cx="18.5" cy="18.5" r="2.5"/>
+            <div className="partner-step-row">
+              <div className="partner-step-icon-img">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="50" height="50">
+                  <rect x="4" y="20" width="36" height="22" rx="3" fill="#e8eef9" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M40 28h14l6 8v6H40V28z" fill="#4a7cdc" opacity="0.3" stroke="#4a7cdc" strokeWidth="2"/>
+                  <circle cx="16" cy="46" r="6" fill="#4a7cdc"/>
+                  <circle cx="16" cy="46" r="3" fill="#e8eef9"/>
+                  <circle cx="48" cy="46" r="6" fill="#4a7cdc"/>
+                  <circle cx="48" cy="46" r="3" fill="#e8eef9"/>
                 </svg>
               </div>
-              <h4>Shipping</h4>
-              <p>The BMS in-house deployment team ships a preprogrammed terminal directly to the merchant…</p>
+              <div className="partner-step-text">
+                <h4>Shipping</h4>
+                <p>The BMS in-house deployment team ships a preprogrammed terminal directly to the merchant…</p>
+              </div>
             </div>
           </div>
-          <a href="#becoming-partner" className="btn-green">Get free Quote</a>
         </div>
       </section>
 
-      {/* Agent Friendly Programs */}
+      {/* Agent Friendly Programs - icon-left, text-right cards */}
       <section className="about-section" id="agent-friendly">
         <div className="partners-programs">
           <h2>The Most Agent Friendly Programs Out There</h2>
           <p>At BMS, we want you to make more money and maintain your customers longer. We realize that the more time you spend dealing with customer support the less time that you have to drive new business. We give you the support and resources you need to grow and to make the money you deserve.</p>
 
           <div className="partners-benefits-grid">
-            <div className="partner-benefit">
-              <div className="partner-benefit-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#349044" strokeWidth="2">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            <div className="partner-benefit-card">
+              <div className="partner-benefit-icon-circle">
+                <svg viewBox="0 0 48 48" width="28" height="28">
+                  <path d="M12 32c-2 0-4 2-4 4v4h16v-4c0-2-2-4-4-4H12z" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <circle cx="16" cy="24" r="5" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M28 32c-2 0-4 2-4 4" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <circle cx="32" cy="24" r="5" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M8 40h32" fill="none" stroke="#4a7cdc" strokeWidth="2" opacity="0.3"/>
                 </svg>
               </div>
-              <h4>Outstanding Support for Partners</h4>
-              <p>We are here for you and your merchants, 24/7.</p>
+              <div className="partner-benefit-text">
+                <h4>Outstanding Support for Partners</h4>
+                <p>We are here for you and your merchants, 24/7.</p>
+              </div>
             </div>
-            <div className="partner-benefit">
-              <div className="partner-benefit-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#349044" strokeWidth="2">
-                  <line x1="12" y1="1" x2="12" y2="23"/>
-                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            <div className="partner-benefit-card">
+              <div className="partner-benefit-icon-circle">
+                <svg viewBox="0 0 48 48" width="28" height="28">
+                  <circle cx="24" cy="24" r="14" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <line x1="24" y1="14" x2="24" y2="34" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M30 18h-8a4 4 0 000 8h4a4 4 0 010 8h-8" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
                 </svg>
               </div>
-              <h4>Upfront Bonus for Partners</h4>
-              <p>You receive a bonus for simply signing a new account.</p>
+              <div className="partner-benefit-text">
+                <h4>Upfront Bonus for Partners</h4>
+                <p>You receive a bonus for simply signing a new account.</p>
+              </div>
             </div>
-            <div className="partner-benefit">
-              <div className="partner-benefit-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#349044" strokeWidth="2">
-                  <polyline points="23,6 13.5,15.5 8.5,10.5 1,18"/>
-                  <polyline points="17,6 23,6 23,12"/>
+            <div className="partner-benefit-card">
+              <div className="partner-benefit-icon-circle">
+                <svg viewBox="0 0 48 48" width="28" height="28">
+                  <polyline points="6,34 18,20 26,28 42,12" fill="none" stroke="#4a7cdc" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <polyline points="34,12 42,12 42,20" fill="none" stroke="#4a7cdc" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </div>
-              <h4>Sizeable Residuals for Partners</h4>
-              <p>Residuals of up to 100%, on top of your bonus.</p>
+              <div className="partner-benefit-text">
+                <h4>Sizeable Residuals for Partners</h4>
+                <p>Residuals of up to 100%, on top of your bonus.</p>
+              </div>
             </div>
-            <div className="partner-benefit">
-              <div className="partner-benefit-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#349044" strokeWidth="2">
-                  <rect x="2" y="5" width="20" height="14" rx="2"/>
-                  <line x1="2" y1="10" x2="22" y2="10"/>
+            <div className="partner-benefit-card">
+              <div className="partner-benefit-icon-circle">
+                <svg viewBox="0 0 48 48" width="28" height="28">
+                  <circle cx="24" cy="14" r="6" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M24 22v16" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M18 28h12" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <circle cx="24" cy="42" r="4" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
                 </svg>
               </div>
-              <h4>Competitive Rates for Merchants</h4>
-              <p>Our professionals have negotiated the best rates for you.</p>
+              <div className="partner-benefit-text">
+                <h4>Competitive Rates for Merchants</h4>
+                <p>Our professionals have negotiated the best rates for you.</p>
+              </div>
             </div>
-            <div className="partner-benefit">
-              <div className="partner-benefit-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#349044" strokeWidth="2">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <div className="partner-benefit-card">
+              <div className="partner-benefit-icon-circle">
+                <svg viewBox="0 0 48 48" width="28" height="28">
+                  <rect x="8" y="10" width="32" height="22" rx="3" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M8 18h32" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <rect x="12" y="24" width="10" height="4" rx="1" fill="#4a7cdc" opacity="0.3"/>
+                  <circle cx="24" cy="42" r="4" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <line x1="24" y1="32" x2="24" y2="38" stroke="#4a7cdc" strokeWidth="2"/>
                 </svg>
               </div>
-              <h4>American Express Opt Blue for Merchants</h4>
-              <p>An elite Amex program recently made available for small businesses. Merchants have one statement, one settlement, with simplified processing.</p>
+              <div className="partner-benefit-text">
+                <h4>American Express Opt Blue for Merchants</h4>
+                <p>An elite Amex program recently made available for small businesses. Merchants have one statement, one settlement, with simplified processing.</p>
+              </div>
             </div>
-            <div className="partner-benefit">
-              <div className="partner-benefit-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#349044" strokeWidth="2">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            <div className="partner-benefit-card">
+              <div className="partner-benefit-icon-circle">
+                <svg viewBox="0 0 48 48" width="28" height="28">
+                  <path d="M40 30v6a4 4 0 01-4 4H12a4 4 0 01-4-4v-6" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M14 18a10 10 0 0120 0" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <circle cx="24" cy="14" r="3" fill="#4a7cdc" opacity="0.3"/>
+                  <path d="M18 26h12" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
+                  <path d="M20 30h8" fill="none" stroke="#4a7cdc" strokeWidth="2"/>
                 </svg>
               </div>
-              <h4>24-Hour Customer Service for Merchants</h4>
-              <p>Merchants can reach a BMS customer service advisor whenever they need one.</p>
+              <div className="partner-benefit-text">
+                <h4>24-Hour Customer Service for Merchants</h4>
+                <p>Merchants can reach a BMS customer service advisor whenever they need one.</p>
+              </div>
             </div>
           </div>
         </div>
